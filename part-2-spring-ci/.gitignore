@@ -1,0 +1,97 @@
+# IDE specific files - IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+target/ # Also covered by Maven section, but good to have explicitly for IDEA users
+
+# IDE specific files - Eclipse
+.classpath
+.project
+.settings/
+target/ # Also covered by Maven section, but good to have explicitly for Eclipse users
+*.class
+
+# IDE specific files - VS Code
+.vscode/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar # If you don't want to commit the wrapper jar itself
+
+# Spring Boot specific
+# Log files
+*.log
+logs/
+
+# Spring Boot DevTools (if used)
+# If you use spring-boot-devtools, it might create files that you don't want to commit.
+# For example, if you use live reload features, it might create temporary files.
+# Add specific patterns here if needed based on your devtools usage.
+
+# Application specific - if you have local configuration files not meant for the repo
+# For example:
+# application-local.properties
+# application-dev.yml
+
+# Operating System files
+.DS_Store # macOS
+Thumbs.db # Windows
+ehthumbs.db # Windows
+Desktop.ini # Windows
+$RECYCLE.BIN/ # Windows Recycle Bin
+
+# Build reports and test reports
+# These are usually generated in the target directory, but good to list if generated elsewhere
+# Surefire reports (tests)
+**/surefire-reports/
+**/failsafe-reports/
+
+# JaCoCo code coverage reports
+**/jacoco.exec
+**/jacoco.xml
+**/site/jacoco/
+
+# Other build artifacts or temporary files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# If you're using Gradle as well (though less common for a "Maven Spring Boot app")
+# .gradle
+# build/
+
+# Secrets and sensitive information - ALWAYS keep these out of your repository
+# Consider using environment variables or a secrets management tool
+# For example:
+# .env
+# secrets.yml
+# *.pem
+# *.key
+
+# Specific to certain libraries or tools you might add
+# For example, if using H2 database in file mode for local dev:
+# *.mv.db
+# *.trace.db
+
+# Node.js (if you have a frontend part built with Node.js in the same project)
+# node_modules/
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# package-lock.json # Sometimes committed, sometimes not, depends on team policy
+# yarn.lock # Sometimes committed, sometimes not, depends on team policy
+# dist/
+# .npm/
